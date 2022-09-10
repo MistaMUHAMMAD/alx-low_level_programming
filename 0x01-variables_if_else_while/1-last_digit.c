@@ -10,6 +10,7 @@
 int main(void)
 {
 	int n;
+	char last[] = "last digit of"
 
 	srand(time(0));
 	n = rand() - RAND_max / 2;

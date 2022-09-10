@@ -5,7 +5,7 @@
  *
  * Return: Always (Success)
  */
-int main (void)
+int main(void)
 {
 	char c;
 
@@ -14,7 +14,6 @@ int main (void)
 		if (c != 'e' && c != 'q')
 			putchar(c);
 	}
-
 	putchar('\n');
 
 	return (0);

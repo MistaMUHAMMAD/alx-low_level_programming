@@ -8,20 +8,20 @@
  */
 int main(void)
 {
-	int n, m;
+	int x, y;
 
-	for (n = 0; n <= 98; n++)
+	for (x = 0; x <= 98; x++)
 	{
-		for (m = n + 1; m <= 99; m++)
+		for (y = x + 1; y <= 99; y++)
 		{
-		putchar((n / 10) + '0');
-		putchar((n % 10) + '0');
+		putchar((y / 10) + '0');
+		putchar((y % 10) + '0');
 		putchar(' ');
-		putchar((m / 10) + '0');
+		putchar((x / 10) + '0');
 
-		putchar((num2 % 10) + '0');
+		putchar((x % 10) + '0');
 
-		if (num1 == 98 && num2 == 99)
+		if (x == 98 && y == 99)
 		continue;
 
 		putchar(',');

@@ -14,14 +14,12 @@ void print_times_table(int n)
 			for (num = 0; num <= n; num++)
 			{
 				_putchar('0');
-				
 				for (mult = 1; mult <= n; mult++)
 				{
 					_putchar(',');
 					_putchar(' ');
 
 					prod = num * mult;
-					
 					if (prod <= 99)
 						_putchar(' ');
 					if (prod <= 9)

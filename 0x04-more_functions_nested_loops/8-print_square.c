@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,23 +9,22 @@ nclude <stdio.h>
 
 void print_square(int size)
 {
-	int inc1, inc2;
+void print_square(int size)
+{
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
+int i, j;
 
-	if (size > 0)
-	{
-		for (inc1 = 0; inc1 < size; inc1++)
-		{
-			for (inc2 = 0; inc2 < (size - 1); inc2++)
-			{
-				putchar('#');
-			}
+for (i = 0; i < size; i++)
+{
+for (j = 0; j < size; j++)
 
-			putchar('#');
-			putchar('\n');
-		}
-	}
-	else
-	{
-		putchar('\n');
-	}
+_putchar('#');
+}
+_putchar('\n');
+}
 }

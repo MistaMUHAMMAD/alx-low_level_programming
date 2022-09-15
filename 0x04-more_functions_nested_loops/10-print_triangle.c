@@ -23,7 +23,7 @@ void print_triangle(int size)
 
 			if (inc1 == size)
 				continue;
-		
+
 			putchar('\n');
 		}
 	}

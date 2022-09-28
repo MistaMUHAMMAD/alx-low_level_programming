@@ -41,11 +41,10 @@ void checker(char *s, int start, int end, int *flag)
  */
 int _strlen_recursion(char *s)
 {
-	in sum = 0;
+	int sum = 0;
 
 	if (*s != '\0')
-	{
+
 		sum++;
-		sum += _strlen_recursions(s + 1);
-	}
+		sum += _strlen_recursion(s + 1);
 }

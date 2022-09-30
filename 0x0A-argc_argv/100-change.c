@@ -1,53 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
- * main - function
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
+/**
+ * main - entry point
+ * @argc: integer, length of @argv
+ * @argv: one-dimensional array of strings, arguments of this program
  *
- * Return: If the number of arguments is not exactly one - 1.
- *	   Otherwise - 0.
+ * Return: 0, success
  */
 int main(int argc, char *argv[])
 {
-	int cents, coins = 0;
+	int result, amount, cent;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
+	result = 0;
+	amount  = atoi(argv[1]);
 
-	cents = atoi(argv[1]);
-
-	while (cents > 0)
+	if (amount < 0)
 	{
-		coins++;
-		if ((cents - 25) >= 0)
-		{
-			cents -= 25;
-			continue;
-		}
-		if ((cents - 10) >= 0)
-		{
-			cents -= 10;
-			continue;
-		}
-		if ((cents - 5) >= 0)
-		{
-			cents -= 5;
-			continue;
-		}
-		if ((cents - 2) >= 0)
-		{
-			cents -= 2;
-			continue;
-		}
-		cents--;
+		printf("0\n");
+		return (0);
+	}
+	while (amount)
+	{
+		if (amount >= 25)
+			cent = 25;
+		else if (amount >= 10)
+			cent = 10;
+		else if (amount >= 5)
+			cent = 5;
+		else if (amount >= 2)
+			cent = 2;
+		else
+			cent = 1;
+		result += amount / cent;
+		amount %= cent;
 	}
 
-	printf("%d\n", coins);
-
+	printf("%d\n", result);
 	return (0);
 }

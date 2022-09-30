@@ -20,4 +20,8 @@ if (argc > 0)
 while (count < argc)
 }
 printf("%s\n", argv[count]);
+count++;
+}
+{
+return (0);
 }

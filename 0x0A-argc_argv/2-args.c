@@ -10,8 +10,14 @@
  */
 int main(int argc, char *argv[])
 {
-(void) argv; /*Ignore argv*/
-printf("%i\n", argc - 1);
 
-return (0);
+/*Declaring variables*/
+int count = 0
+
+if (argc > 0)
+{
+/*WHILE - Print each arguments*/
+while (count < argc)
+}
+printf("%s\n", argv[count]);
 }

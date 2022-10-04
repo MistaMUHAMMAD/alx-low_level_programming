@@ -8,7 +8,6 @@
 * Return: number of words in the string
 * @str: pointer to the string
 */
-
 int count_words(char *str)
 {
 	int words = 0;
@@ -39,7 +38,6 @@ int count_words(char *str)
 * @str: pointer to the string
 * @pos: pointer ti the array used to store the positions
 */
-
 void look_pos(char *str, int *pos)
 {
 	int flagw = 1;
@@ -79,7 +77,6 @@ void look_pos(char *str, int *pos)
 * @words: number of words
 * @str: pointer to the string
 */
-
 int print_words(int *pos, char **m, char *str, int words)
 {
 	int b = 0;
@@ -114,7 +111,6 @@ int print_words(int *pos, char **m, char *str, int words)
 * Return: pointer to the array
 * @str: pointer to the array
 */
-
 char **strtow(char *str)
 {
 	int words;

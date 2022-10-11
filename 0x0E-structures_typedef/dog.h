@@ -2,16 +2,15 @@
 #define DOG_H_FILE
 
 /**
- * struct_dog - A new type describing a dog.
+ * struct dog - A new type describing a dog.
  * @name: The name of the dog.
  * @age: The age of the dog.
  * @owner: The owner of the dog.
  */
-
-typedef struct_dog
+typedef struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 } dog_t;
 
@@ -24,4 +23,4 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
-#endif /*DOG_H*/
+#endif /* DOG_H_FILE */

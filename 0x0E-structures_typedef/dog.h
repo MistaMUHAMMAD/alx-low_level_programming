@@ -2,7 +2,7 @@
 #define DOG_H_FILE
 
 /**
- * struct dog - structure describing a dog.
+ * *struct dog - structure describing a dog.
  *
  * @name: The name of the dog.
  * @age: The age of the dog.

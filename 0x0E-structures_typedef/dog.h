@@ -1,7 +1,3 @@
-/**
- * Desc: Header file that defines a new type struct dog.
- */
-
 #ifndef DOG_H
 #ifndef DOG_H
 
@@ -11,6 +7,7 @@
  * @age: The age of the dog.
  * @owner: The owner of the dog.
  */
+
 struct dog
 {
 	char *name;
@@ -28,4 +25,4 @@ void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
-#endif
+#endif /*DOG_H*/

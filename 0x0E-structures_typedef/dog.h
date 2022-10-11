@@ -2,7 +2,8 @@
 #define DOG_H_FILE
 
 /**
- * typedef struct dog - A new type describing a dog.
+ * struct dog - structure describing a dog.
+ *
  * @name: The name of the dog.
  * @age: The age of the dog.
  * @owner: The owner of the dog.

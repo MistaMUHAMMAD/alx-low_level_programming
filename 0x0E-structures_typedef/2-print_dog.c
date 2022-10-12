@@ -6,12 +6,13 @@
  * print_dog - Prints a struct dog.
  * @d: The struct dog to be printed.
  */
-void print_dog(struct dog *d);
+void print_dog(struct dog *d)
 {
-	if (d != NULL)
-	{
-		if (d->name != NULL)
-			printf("Name: %S\n", d->name);
+	if (d == NULL)
+		return;
+	
+	if (d->name == NULL)
+		printf("Name: %s\n", d->name);
 	else
 		print("Name: (nil)\n");
 	printf("Age: %.6f\n", d->age);

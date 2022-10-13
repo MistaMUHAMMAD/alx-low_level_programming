@@ -1,7 +1,8 @@
+#include <stdlib.h>
 #include "function_pointers.h"
 
 /**
- * array_iteratori - searches for an integer
+ * array_iterator - searches for an integer
  *
  * @array: The array.
  * @size: The size of array.
@@ -14,7 +15,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	unsigned int i;
 
 	if (array && action)
-		
+
 		for (i = 0; i < size; i++)
 			action([i]);
 }

@@ -9,7 +9,7 @@
  *
  * Return: first index for which cmp doesn't return 0, or -1
  */
-int int_index(int *array, int size, int (*cmp)(int))
+void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int i, r;
 

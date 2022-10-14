@@ -4,7 +4,7 @@
 /**
  * print_opcodes - Print the opcodes of this program
  *
- * @a: addrrss of the main function
+ * @a: addreiss of the main function
  * @n: number of bytes to print
  *
  * Return: void
@@ -12,8 +12,8 @@
 void print_opcodes(char *a, int n)
 {
 	int i;
-
-	for (i = 0, i < n; i++)
+	
+	for (i = 0, i < n; i++;)
 	{
 		printf("%.2hhx", a[i]);
 
@@ -31,7 +31,7 @@ void print_opcodes(char *a, int n)
  *
  * Return: Always 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv)
 {
 	int n;
 

@@ -13,7 +13,7 @@ void print_opcodes(char *a, int n)
 {
 	int i;
 	
-	for (i = 0, i < n; i++;)
+	for (i = 0, i < n; i++)
 	{
 		printf("%.2hhx", a[i]);
 
